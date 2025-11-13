@@ -10,5 +10,12 @@ multiaddr = "0.18.2"
 multihash = { version = "0.18", default-features = false, features = ["std", "multihash-impl", "identity", "sha2"] }
 protoc = "2.28.0"
 serde = "1.0.228"
+thiserror = "2.0.17"
 tokio = { version = "1.48.0", features = ["full"] }
 tokio-stream = "0.1.17"
+tracing = { version = "0.1.41", features = ["log"] }
+tracing-subscriber = { version = "0.3.20", features = ["env-filter"] }
+prost = "0.14.1"
+multistream-select = "0.13.0"
+snow = "0.10.0"
+yamux = "0.13.8"

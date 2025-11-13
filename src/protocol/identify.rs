@@ -1,6 +1,7 @@
 use crate::peer::PeerId;
 use std::collections::HashSet;
 use tokio::sync::mpsc::Sender;
+use crate::protocol::Libp2pProtocolEvent;
 
 const LOG_TARGET: &'static str = "ipfs::identify";
 
@@ -24,5 +25,10 @@ pub enum IdentifyEvent {
 
 
 pub struct IpfsIdentify {
-    //event_tx: Sender<>
+    /// TX channel for sending `Libp2pProtocolEvent`s.
+    event_tx: Sender<Libp2pProtocolEvent>
+
+
+
+
 }

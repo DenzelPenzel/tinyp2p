@@ -1,5 +1,7 @@
 pub mod protocol;
-mod peer;
+pub mod peer;
+pub mod transport;
+pub mod error;
 
 pub struct Tinyp2p {
 
