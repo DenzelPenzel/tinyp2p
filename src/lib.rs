@@ -1,8 +1,6 @@
-pub mod protocol;
-pub mod peer;
-pub mod transport;
 pub mod error;
+pub mod peer;
+pub mod protocol;
+pub mod transport;
 
-pub struct Tinyp2p {
-
-}
+pub struct Tinyp2p {}

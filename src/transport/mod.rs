@@ -1,8 +1,8 @@
-use std::fmt::Debug;
-use futures::{AsyncRead, AsyncWrite};
-use multiaddr::Multiaddr;
 use crate::error::Error;
 use crate::peer::PeerId;
+use futures::{AsyncRead, AsyncWrite};
+use multiaddr::Multiaddr;
+use std::fmt::Debug;
 
 pub trait Connection: AsyncRead + AsyncWrite + Unpin + Send + Debug + 'static {}
 

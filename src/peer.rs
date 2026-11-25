@@ -16,11 +16,9 @@ impl fmt::Display for PeerId {
 }
 
 impl PeerId {
-    pub fn start(&mut self) {
-    }
+    pub fn start(&mut self) {}
 
-    async fn run(self) {
-    }
+    async fn run(self) {}
 
     pub fn to_bytes(&self) -> Vec<u8> {
         self.multihash.to_bytes()
